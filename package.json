@@ -1,0 +1,21 @@
+{
+    "name": "aws-ts-textract",
+    "scripts": {
+        "build": "tsc",
+        "rm-file": "aws s3 rm s3://docstorage-ccba5c7/LIC700.pdf",
+        "cp-file": "aws s3 cp LIC700.pdf s3://docstorage-ccba5c7"
+    },
+    "devDependencies": {
+        "@types/mocha": "^8.2.2",
+        "@types/node": "^10.0.0",
+        "@types/uuid": "^8.3.0",
+        "aws-sdk": "^2.933.0",
+        "mocha": "^9.0.2",
+        "ts-node": "^7.0.1"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^4.9.0",
+        "@pulumi/pulumi": "^3.0.0",
+        "uuid": "^3.3.2"
+    }
+}

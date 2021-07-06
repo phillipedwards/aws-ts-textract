@@ -1,0 +1,3 @@
+name: aws-ts-textract
+runtime: nodejs
+description: A minimal Typscript AWS Textract program created with Pulumi
